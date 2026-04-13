@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MORYA SOLUTION PRIVATE LIMITED</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  width: 60%;
+  background: linear-gradient(135deg, #4ca7f1, #000000ab);
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.left p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.features {
+  margin-top: 20px;
+}
+
+.feature {
+  border: 2px solid #00c6ff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  width: fit-content;
+}
+
+.right {
+  width: 40%;
+  background: #ffffff;
+  padding: 40px;
+}
+
+.instructions {
+  background: #eef3f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.instructions p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.login-btn {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: hsl(218, 100%, 63%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #79a0e3;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1f4fa3;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="left">
+    <h1>MORYA SOLUTION PRIVATE LIMITED</h1>
+    <p>A New Way To Aadhaar Based Payment System</p>
+
+    <div class="features">
+      <div class="feature">Cash Withdrawal</div>
+      <div class="feature">Cash Deposit</div>
+      <div class="feature">Mini Statement</div>
+      <div class="feature">Balance Enquiry</div>
+      
+    </div>
+  </div>
+
+  <div class="right">
+
+    <div class="header">
+      <div class="logo">MORYA SOLUTION PRIVATE LIMITED</div>
+    </div>
+
+    <div class="instructions">
+      <p>Please provide a valid ID.</p>
+      <p>Please provide your biometrics for Aadhaar authentication.</p>
+      <p>Please agree to the terms and conditions.</p>
+      <p>Hit the SCAN button for Login into DigiPay.</p>
+      <p>Only registered users can login.</p>
+    </div>
+
+    <button class="login-btn" onclick="login()">Login</button>
+
+  </div>
+
+</div>
+
+<script>
+function login() {
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
